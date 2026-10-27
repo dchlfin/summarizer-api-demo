@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body><h2>Input</h2>
+
+<form>
+  <div>
+    <label for="summary-text">Enter text to summarize:</label>
+    <textarea id="summary-text" name="summaryText" rows="6"></textarea>
+    <output class="input-count">Input character count: </output>
+  </div>
+  <div>
+    <label for="summary-type">Summary type:</label>
+    <select id="summary-type" name="summaryType">
+      <option value="headline">Headline</option>
+      <option value="key-points">Key points</option>
+      <option value="teaser">Teaser</option>
+      <option value="tldr" selected>tldr</option>
+    </select>
+  </div>
+  <div>
+    <label for="summary-length">Summary length:</label>
+    <select id="summary-length" name="summaryLength">
+      <option value="short" selected>Short</option>
+      <option value="medium">Medium</option>
+      <option value="long">Long</option>
+    </select>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+<h2>Summary output</h2>
+
+<p class="summary-output"></p>
+<output class="output-count">Output summary character count: 0</output>
+</html>
